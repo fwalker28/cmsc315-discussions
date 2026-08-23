@@ -10,7 +10,6 @@ analyze the code to demonstrate understanding of inheritance, namespaces, and ob
 """
 
 
-from copy import copy, deepcopy
 
 
 # TODO 1:
@@ -25,7 +24,13 @@ from copy import copy, deepcopy
 # Replace the pass statement with your implementation.
 
 class ParentClass:
-    pass
+    school = "UMGC"
+    def __init__(self, name, age):
+         self.name = name
+         self.age = age
+
+    def display_info(self):
+        return f"Name: {self.name}, Age: {self.age}, School: {self.school}"
 
 
 # TODO 2:
@@ -40,7 +45,17 @@ class ParentClass:
 #
 # Replace the pass statement with your implementation.
 
+
+
 class ChildClass(ParentClass):
+    department = "computer science"
+
+    def __init__(self, name, age, student_id, courses):
+        super().__init__(name, age)
+
+        self.student_id = student_id
+        self.courses = courses
+
     pass
 
 
