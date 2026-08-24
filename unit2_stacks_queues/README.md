@@ -34,3 +34,16 @@ Your reflection should be approximately 150–200 words and address the followin
 1. What concepts or skills did you learn while completing this assignment?
 2. What challenges did you encounter, and how did you overcome them?
 3. Explain the differences between stacks and queues as this relates to real-world applications.
+
+
+While working on this assignment, I learned how stacks and queues work in Python and how they are used to organize data.
+I learned that a stack uses LIFO, which means the last item added is the first one removed. A queue uses FIFO, meaning
+the first item added is the first one removed. I also got more practice using Python lists and the deque data structure.
+
+One challenge I had was getting the queue to work correctly, especially when using popleft() and testing an empty queue. 
+I also ran into an error when front() tried to access an item from an empty queue. I fixed this by adding a check to see
+if the queue was empty before trying to remove or view an item.
+
+Stacks and queues are useful in real-world situations because they handle information in different ways. A stack could
+be used for browser history or undoing an action, where the most recent action is handled first. A queue could be used 
+for a printer or customer service line, where the first person or request in line should be handled first.
